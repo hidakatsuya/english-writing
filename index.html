@@ -4,6 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="A simple editor for writing in English while keeping track of your word count.">
+    <link rel="canonical" href="https://hidakatsuya.dev/english-writing/">
+    <meta property="og:title" content="English Writing">
+    <meta property="og:description" content="A simple editor for writing in English while keeping track of your word count.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hidakatsuya.dev/english-writing/">
+    <meta property="og:site_name" content="English Writing">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="English Writing">
+    <meta name="twitter:description" content="A simple editor for writing in English while keeping track of your word count.">
     <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#191918" media="(prefers-color-scheme: dark)">
     <meta name="apple-mobile-web-app-title" content="English Writing">
@@ -134,10 +143,44 @@
       }
 
       .privacy-note {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 6px;
         margin: 0;
         color: var(--muted-text);
         font-size: 12px;
         line-height: 1.5;
+      }
+
+      .source-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        color: inherit;
+        text-decoration-color: color-mix(in srgb, currentColor 45%, transparent);
+        text-underline-offset: 2px;
+      }
+
+      .source-link:hover {
+        color: var(--text);
+        text-decoration-color: currentColor;
+      }
+
+      .source-link:focus-visible {
+        border-radius: 3px;
+        outline: 3px solid color-mix(in srgb, var(--focus) 40%, transparent);
+        outline-offset: 2px;
+      }
+
+      .source-link picture {
+        display: contents;
+      }
+
+      .github-icon {
+        flex: 0 0 auto;
+        width: 16px;
+        height: 16px;
       }
 
       .editor-actions {
@@ -261,6 +304,10 @@
           text-align: center;
         }
 
+        .privacy-note {
+          justify-content: center;
+        }
+
         .editor-actions {
           display: flex;
           width: 100%;
@@ -288,7 +335,22 @@
       </div>
 
       <div class="editor-footer">
-        <p class="privacy-note">Nothing you type is sent anywhere.</p>
+        <p class="privacy-note">
+          <span>Nothing you type is sent anywhere.</span>
+          <a
+            class="source-link"
+            href="https://github.com/hidakatsuya/english-writing"
+            aria-label="View source code on GitHub (opens in a new tab)"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <picture>
+              <source srcset="icons/github-mark-16-white.svg" media="(prefers-color-scheme: dark)">
+              <img class="github-icon" src="icons/github-mark-16.svg" alt="" width="16" height="16">
+            </picture>
+            <span>View source</span>
+          </a>
+        </p>
         <div class="editor-actions">
           <button class="clear-button" id="clear-button" type="button" disabled>
             <span id="clear-button-label">Clear</span>

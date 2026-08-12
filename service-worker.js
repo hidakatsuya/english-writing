@@ -1,9 +1,11 @@
-const CACHE_NAME = "english-writing-v2";
+const CACHE_NAME = "english-writing-v3";
 const APP_SHELL = [
   "./",
   "./index.html",
   "./manifest.webmanifest",
   "./icons/icon.svg",
+  "./icons/github-mark-16.svg",
+  "./icons/github-mark-16-white.svg",
   "./icons/icon-192.png",
   "./icons/icon-512.png",
   "./icons/apple-touch-icon.png",
