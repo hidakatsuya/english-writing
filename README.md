@@ -1,6 +1,6 @@
 # English Writing
 
-A simple, distraction-free editor for writing in English while keeping track of your word count.
+A simple editor for writing in English while keeping track of your word count.
 
 ## Features
 
