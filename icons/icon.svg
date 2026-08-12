@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Pencil">
+  <rect width="512" height="512" fill="#ffffff"/>
+  <g transform="rotate(-45 256 256)">
+    <path d="M240 104h32a24 24 0 0 1 24 24v240h-80V128a24 24 0 0 1 24-24z" fill="#202124"/>
+    <path d="M216 368h80l-40 72z" fill="#9b9b96"/>
+    <path d="M244 419h24l-12 21z" fill="#202124"/>
+    <path d="M216 150h80" fill="none" stroke="#ffffff" stroke-width="12"/>
+  </g>
+</svg>
